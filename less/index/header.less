@@ -1,0 +1,34 @@
+header nav{
+    padding: 2%;
+    width: 100%;
+    background-color: @redditOrange;
+    border-bottom: .1rem solid black;
+    .flexit(row, nowrap, flex-start);
+    img{
+        width: 20%;
+    }
+    .btnwrap{
+        width: 30%;
+        margin: 3% 1% 3% 6%;
+         .logIn{
+            .stybtn(@bordcol:@otherBackCo; @bordrad:6px; @bgrcol:@redditBlue; @otherBackCo; @txdec:none; @pad:2% 4%; @f-size:1.6rem; @txtali: center);
+            width: 100%;
+        }
+        .regis{
+            .stybtn(@bordcol:@otherBackCo; @bordrad:6px; @bgrcol:@redditBlue; @otherBackCo; @txdec:none; @pad:2% 4%; @f-size:1.6rem; @txtali: center);
+            width: 100%;
+            margin-bottom: 5%;
+        }
+    }
+    p{
+        font-family: @tittle;
+        font-size: 90%;
+        width: 44%;
+        margin-block-start: 12%;
+    }
+}
+header .banner{
+    width: 100%;
+    height: 80vh;
+    background-image: url("static\img\Banner\banner640x427.jpg");
+}
