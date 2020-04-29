@@ -26,6 +26,16 @@ nav{
         width: 44%;
         margin-block-start: 12%;
     }
+    @media @tablet{
+        p{
+            font-size: 3.1rem;
+        }
+        .btnwrap{
+            .logIn, .regis{
+                font-size: 4rem;
+            }
+        }
+    }
 }
 .banner{
     border: .2rem solid black;
@@ -54,8 +64,20 @@ nav{
     .regis{
         
         .stybtn(@bordcol:@otherBackCo; @bordrad:6px; @bgrcol:@redditBlue; @otherBackCo; @txdec:none; @pad:2% 4%; @f-size:2rem; @txtali: center);
-        width: 30rem;
+        width: 50%;
         
+    }
+    @media @tablet{
+        h1{
+            font-size: 6rem;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
+        .regis{
+            margin-bottom: 10%;
+            font-size: 3rem;
+        }
     }
 
 }
