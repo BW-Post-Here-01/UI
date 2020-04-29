@@ -215,6 +215,7 @@ nav p {
   margin-block-start: 12%;
 }
 .banner {
+  border: 0.2rem solid black;
   width: 100%;
   height: 86vh;
   background-image: url('/static/img/Banner/banner640x427.jpg');
@@ -258,4 +259,73 @@ nav p {
   background-color: #254E70;
   color: #ADE8FA;
   border: 0.2rem solid black;
+}
+.whatItDoes {
+  border-top: 0.2rem solid black;
+  border-bottom: 0.2rem solid black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+}
+.whatItDoes h1 {
+  font-family: Open Sans, sans-serif;
+  font-size: 4rem;
+  margin: 4rem 0 2rem 0;
+  letter-spacing: 0.5rem;
+  line-height: 4rem;
+}
+.whatItDoes .search,
+.whatItDoes .afterSearch {
+  width: 80%;
+  margin: 2rem auto;
+}
+.whatItDoes .search img,
+.whatItDoes .afterSearch img {
+  width: 100%;
+  height: 30rem;
+  border-radius: 12px;
+  border: 0.1rem solid black;
+}
+.whatItDoes .search p,
+.whatItDoes .afterSearch p {
+  font-size: 2.5rem;
+  margin: 10% 0;
+  word-wrap: break-word;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+}
+.howItWorks {
+  border-top: 0.2rem solid black;
+  border-bottom: 0.2rem solid black;
+  background-color: #ADE8FA display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: space-between; align-items: center; align-content: flex-start;;
+}
+.howItWorks h1 {
+  font-family: Open Sans, sans-serif;
+  font-size: 4rem;
+  margin: 4rem 0 2rem 0;
+  letter-spacing: 0.5rem;
+  line-height: 4rem;
+}
+.howItWorks .accounts,
+.howItWorks .algo {
+  width: 80%;
+  margin: 2rem auto;
+}
+.howItWorks .accounts img,
+.howItWorks .algo img {
+  width: 100%;
+  height: 30rem;
+  border-radius: 8px;
+  border: 0.1rem solid black;
+}
+.howItWorks .accounts p,
+.howItWorks .algo p {
+  font-size: 2.5rem;
+  margin: 10% 0;
+  word-wrap: break-word;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
 }
