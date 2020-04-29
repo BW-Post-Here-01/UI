@@ -1,13 +1,15 @@
 .whatItDoes, .howItWorks{
     border-top: .2rem solid @otherBackCo;
     border-bottom: .2rem solid @otherBackCo;
+    letter-spacing: .05rem;
     .flexit(column, nowrap, space-between, center);
     h1{
         font-family: @subtittle;
         font-size: 4rem;
-        margin: 4rem 0 2rem 0;
+        margin: 3rem 0;
         letter-spacing: .5rem;
-        line-height: 4rem;
+        line-height: 6rem;
+        border-bottom: .2rem ridge @otherBackCo;
     }
     .search, .afterSearch, .accounts, .algo{
         width: 80%;
@@ -16,25 +18,69 @@
             width: 100%;
             height: 30rem;
             border-radius: 12px;
-            border: .1rem solid @otherBackCo;
+            border: .2rem solid @otherBackCo;
         }
         p{
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin: 10% 0;
             word-wrap: break-word;
-            line-height: 2.5rem;
-            letter-spacing: .8rem;
+            line-height: 2rem;
+            // letter-spacing: .05rem;
+        }
+    }
+    @media@phone{
+        h1{
+            font-size: 5rem;
+            margin: 4rem 0;
+            line-height: 7rem;
+        }
+        .search, .afterSearch, .accounts, .algo{
+            p{
+                font-size: 3rem;
+                line-height: 3rem;
+                // letter-spacing: .05rem;
+            }
         }
     }
     @media@tablet{
         h1{
             font-size: 6rem;
-            margin: 6rem 0 2rem 0;
-            letter-spacing: .8rem;
-            line-height: 6rem;
+            margin: 6rem 0;
+            letter-spacing: .2rem;
+            line-height: 8rem;
         }
         .search, .afterSearch, .accounts, .algo{
-            
+        width: 90%;
+        margin: 0 auto;
+            .flexit(row, nowrap, space-between, center);
+        p{
+            margin-left: 5%;
+            word-wrap: break-word;
+            width: 55%;
+            font-size: 2.3rem;
+        }
+        img{
+            width: 40%;
+            }
+        }
+        .afterSearch, .algo{
+            width: 90%;
+            margin: 0 auto;
+                .flexit(row-reverse, nowrap, space-between, center);
+            p{
+                margin-right: 5%;
+                word-wrap: break-word;
+                width: 55%;
+                font-size: 2.3rem;
+            }
+            img{
+                width: 40%;
+                }
+            }
+    }
+    @media@desktop{
+        p{
+            font-size: 3rem;
         }
     }
 }
