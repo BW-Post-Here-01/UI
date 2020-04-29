@@ -4,14 +4,12 @@ footer {
     h1{
         font-family: @subtittle;
         font-size: 2rem;
-        margin: 2rem 0;
-        letter-spacing: .2rem;
+        letter-spacing: 0.2rem;
         line-height: 2rem;
-        width: 80%;
+        margin: 3rem 3rem;
     }
     button{
         .stybtn(@bordcol:@otherBackCo; @bordrad:6px; @bgrcol:@redditOrange; @color:@backCo; @txdec:none; @pad:2% 4%; @f-size:2rem; @txtali: center);
-            width: 70%;
             margin: 1rem 0;
     }
     .backToTop{
@@ -19,6 +17,32 @@ footer {
         img{
         width: 5rem;
         height: 5rem;
+        }
+    }
+    @media@phone{
+        h1{
+            font-size: 3rem;
+            line-height: 3rem;
+            margin: 4rem 4rem;
+        }
+        button{
+            font-size: 3rem;
+        }
+        .backToTop{
+            margin: 1rem 0;
+            img{
+            width: 7rem;
+            height: 7rem;
+            }
+    }
+    @media@tablet{
+        h1{
+            width: 50%;
+            font-size: 3rem;
+        }
+        button{
+            font-size: 3rem;
+            }
         }
     }
 }

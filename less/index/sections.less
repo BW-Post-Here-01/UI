@@ -3,6 +3,17 @@
     border-bottom: .2rem solid @otherBackCo;
     letter-spacing: .05rem;
     .flexit(column, nowrap, space-between, center);
+    .learnMore{
+        .stybtn(@bordcol:@otherBackCo; @bordrad:6px; @bgrcol:@redditOrange; @color:@backCo; @txdec:none; @pad:0 5%; @f-size:3rem; @txtali: center);
+        margin: 5% 0;
+        a{
+            text-decoration: none;
+            color: @backCo;
+            text-align: center;
+            vertical-align: middle;
+            font-family: @Mfont;
+        }
+    }
     h1{
         font-family: @subtittle;
         font-size: 4rem;
@@ -29,6 +40,9 @@
         }
     }
     @media@phone{
+        .learnMore{
+            font-size: 4rem;
+        }
         h1{
             font-size: 5rem;
             margin: 4rem 0;
@@ -43,6 +57,10 @@
         }
     }
     @media@tablet{
+        .learnMore{
+            font-size: 5rem;
+            padding: 0 2%;
+        }
         h1{
             font-size: 6rem;
             margin: 6rem 0;
@@ -79,6 +97,10 @@
             }
     }
     @media@desktop{
+        .learnMore{
+            padding: 0 3%;
+            font-size: 6rem;
+        }
         p{
             font-size: 3rem;
         }
