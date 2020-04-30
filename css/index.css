@@ -6,18 +6,18 @@
   src: local('Bungee'), local('Bungee-Regular'), url(https://fonts.gstatic.com/s/bungee/v5/N0bU2SZBIuF2PU_ECg.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaA.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 900;
   font-display: swap;
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirk-VQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOWaA.ttf) format('truetype');
 }
 html,
 body,
@@ -154,7 +154,7 @@ p {
 body {
   background-color: #FCFCFC;
   line-height: 0.1rem;
-  font-family: Open Sans, sans-serif;
+  font-family: 'Roboto Slab', serif;;
 }
 nav {
   padding: 2%;
@@ -173,7 +173,7 @@ nav img {
 }
 nav .btnwrap {
   width: 30%;
-  margin: 3% 1% 3% 6%;
+  margin: 3%;
 }
 nav .btnwrap .logIn {
   border: 0.2rem solid #254E70;
@@ -210,9 +210,53 @@ nav .btnwrap .regis:hover {
 }
 nav p {
   font-family: Bungee, cursive;
-  font-size: 1.99rem;
-  width: 44%;
+  font-size: 1.5rem;
+  width: 51%;
   margin-block-start: 12%;
+}
+@media (min-width: 500px) {
+  nav p {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 800px) {
+  nav img {
+    width: 10%;
+  }
+  nav p {
+    font-size: 3.1rem;
+  }
+  nav .btnwrap {
+    margin: 3% 3% 3% 10%;
+    width: 20%;
+  }
+  nav .btnwrap .logIn,
+  nav .btnwrap .regis {
+    font-size: 3rem;
+  }
+  nav p {
+    font-size: 4rem;
+    margin-block-start: 6%;
+    width: 77%;
+  }
+}
+@media (min-width: 1000px) {
+  nav img {
+    width: 9%;
+  }
+  nav .btnwrap {
+    margin: 1% 0% 1% 0%;
+    width: 20%;
+  }
+  nav .btnwrap .logIn,
+  nav .btnwrap .regis {
+    font-size: 3rem;
+  }
+  nav p {
+    font-size: 4rem;
+    margin-block-start: 5%;
+    width: 77%;
+  }
 }
 .banner {
   border: 0.2rem solid black;
@@ -230,19 +274,23 @@ nav p {
 }
 .banner h1 {
   font-family: Bungee, cursive;
-  font-size: 4rem;
+  font-size: 6rem;
   color: #FCFCFC;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: black;
+  line-height: 6rem;
+  margin: 0 4%;
 }
 .banner h2 {
   font-family: Bungee, cursive;
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: #FCFCFC;
   letter-spacing: 0.2rem;
+  line-height: 3rem;
   -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: black;
+  margin: 0 4%;
 }
 .banner .regis {
   border: 0.2rem solid #254E70;
@@ -253,16 +301,70 @@ nav p {
   padding: 2% 4%;
   font-size: 2rem;
   text-align: center;
-  width: 30rem;
+  width: 50%;
 }
 .banner .regis:hover {
   background-color: #254E70;
   color: #ADE8FA;
   border: 0.2rem solid black;
 }
-.whatItDoes {
-  border-top: 0.2rem solid black;
-  border-bottom: 0.2rem solid black;
+@media (min-width: 500px) {
+  .banner h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+  .banner h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .banner .regis {
+    border: 0.2rem solid #254E70;
+    border-radius: 6px;
+    background-color: #ADE8FA;
+    color: #254E70;
+    text-decoration: none;
+    padding: 2% 4%;
+    font-size: 2rem;
+    text-align: center;
+    width: 50%;
+  }
+  .banner .regis:hover {
+    background-color: #254E70;
+    color: #ADE8FA;
+    border: 0.2rem solid black;
+  }
+}
+@media (min-width: 800px) {
+  .banner h1 {
+    font-size: 6rem;
+  }
+  .banner h2 {
+    font-size: 2.5rem;
+  }
+  .banner .regis {
+    margin-bottom: 10%;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1000px) {
+  .banner h1 {
+    font-size: 16rem;
+    line-height: 16rem;
+    text-align: center;
+  }
+  .banner h2 {
+    font-size: 3rem;
+  }
+  .banner .regis {
+    width: 40%;
+    font-size: 3rem;
+  }
+}
+.whatItDoes,
+.howItWorks {
+  border-top: 0.2rem solid #254E70;
+  border-bottom: 0.2rem solid #254E70;
+  letter-spacing: 0.05rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -270,62 +372,277 @@ nav p {
   align-items: center;
   align-content: flex-start;
 }
-.whatItDoes h1 {
-  font-family: Open Sans, sans-serif;
-  font-size: 4rem;
-  margin: 4rem 0 2rem 0;
+.whatItDoes .learnMore,
+.howItWorks .learnMore {
+  border: 0.2rem solid #254E70;
+  border-radius: 6px;
+  background-color: #ff3f18;
+  color: #FCFCFC;
+  text-decoration: none;
+  padding: 0 5%;
+  font-size: 3rem;
+  text-align: center;
+  margin: 5% 0;
+}
+.whatItDoes .learnMore:hover,
+.howItWorks .learnMore:hover {
+  background-color: #FCFCFC;
+  color: #ff3f18;
+  border: 0.2rem solid black;
+}
+.whatItDoes .learnMore a,
+.howItWorks .learnMore a {
+  text-decoration: none;
+  color: #FCFCFC;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Roboto Slab', serif;;
+}
+.whatItDoes h1,
+.howItWorks h1 {
+  font-family: 'Roboto Slab', serif;font-weight: 900;;
+  font-size: 3.8rem;
+  margin: 3rem 0;
   letter-spacing: 0.5rem;
-  line-height: 4rem;
+  line-height: 6rem;
+  border-bottom: 0.2rem ridge #254E70;
 }
 .whatItDoes .search,
-.whatItDoes .afterSearch {
-  width: 80%;
-  margin: 2rem auto;
-}
-.whatItDoes .search img,
-.whatItDoes .afterSearch img {
-  width: 100%;
-  height: 30rem;
-  border-radius: 12px;
-  border: 0.1rem solid black;
-}
-.whatItDoes .search p,
-.whatItDoes .afterSearch p {
-  font-size: 2.5rem;
-  margin: 10% 0;
-  word-wrap: break-word;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-}
-.howItWorks {
-  border-top: 0.2rem solid black;
-  border-bottom: 0.2rem solid black;
-  background-color: #ADE8FA display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: space-between; align-items: center; align-content: flex-start;;
-}
-.howItWorks h1 {
-  font-family: Open Sans, sans-serif;
-  font-size: 4rem;
-  margin: 4rem 0 2rem 0;
-  letter-spacing: 0.5rem;
-  line-height: 4rem;
-}
+.howItWorks .search,
+.whatItDoes .afterSearch,
+.howItWorks .afterSearch,
+.whatItDoes .accounts,
 .howItWorks .accounts,
+.whatItDoes .algo,
 .howItWorks .algo {
   width: 80%;
   margin: 2rem auto;
 }
+.whatItDoes .search a,
+.howItWorks .search a,
+.whatItDoes .afterSearch a,
+.howItWorks .afterSearch a,
+.whatItDoes .accounts a,
+.howItWorks .accounts a,
+.whatItDoes .algo a,
+.howItWorks .algo a {
+  font-family: 'Roboto Slab', serif;;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin: 2rem auto;
+  list-style: inside;
+}
+.whatItDoes .search img,
+.howItWorks .search img,
+.whatItDoes .afterSearch img,
+.howItWorks .afterSearch img,
+.whatItDoes .accounts img,
 .howItWorks .accounts img,
+.whatItDoes .algo img,
 .howItWorks .algo img {
   width: 100%;
   height: 30rem;
-  border-radius: 8px;
-  border: 0.1rem solid black;
+  border-radius: 12px;
+  border: 0.2rem solid #254E70;
 }
+.whatItDoes .search p,
+.howItWorks .search p,
+.whatItDoes .afterSearch p,
+.howItWorks .afterSearch p,
+.whatItDoes .accounts p,
 .howItWorks .accounts p,
+.whatItDoes .algo p,
 .howItWorks .algo p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 10% 0;
   word-wrap: break-word;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
+  line-height: 2rem;
+}
+@media (min-width: 500px) {
+  .whatItDoes .learnMore,
+  .howItWorks .learnMore {
+    font-size: 4rem;
+  }
+  .whatItDoes h1,
+  .howItWorks h1 {
+    font-size: 5rem;
+    margin: 4rem 0;
+    line-height: 7rem;
+  }
+  .whatItDoes .search p,
+  .howItWorks .search p,
+  .whatItDoes .afterSearch p,
+  .howItWorks .afterSearch p,
+  .whatItDoes .accounts p,
+  .howItWorks .accounts p,
+  .whatItDoes .algo p,
+  .howItWorks .algo p {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 800px) {
+  .whatItDoes .learnMore,
+  .howItWorks .learnMore {
+    font-size: 5rem;
+    padding: 0 2%;
+  }
+  .whatItDoes h1,
+  .howItWorks h1 {
+    font-size: 6rem;
+    margin: 6rem 0;
+    letter-spacing: 0.2rem;
+    line-height: 8rem;
+  }
+  .whatItDoes .search,
+  .howItWorks .search,
+  .whatItDoes .afterSearch,
+  .howItWorks .afterSearch,
+  .whatItDoes .accounts,
+  .howItWorks .accounts,
+  .whatItDoes .algo,
+  .howItWorks .algo {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+  }
+  .whatItDoes .search p,
+  .howItWorks .search p,
+  .whatItDoes .afterSearch p,
+  .howItWorks .afterSearch p,
+  .whatItDoes .accounts p,
+  .howItWorks .accounts p,
+  .whatItDoes .algo p,
+  .howItWorks .algo p {
+    margin-left: 5%;
+    word-wrap: break-word;
+    width: 55%;
+    font-size: 2.3rem;
+  }
+  .whatItDoes .search img,
+  .howItWorks .search img,
+  .whatItDoes .afterSearch img,
+  .howItWorks .afterSearch img,
+  .whatItDoes .accounts img,
+  .howItWorks .accounts img,
+  .whatItDoes .algo img,
+  .howItWorks .algo img {
+    width: 40%;
+  }
+  .whatItDoes .afterSearch,
+  .howItWorks .afterSearch,
+  .whatItDoes .algo,
+  .howItWorks .algo {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+  }
+  .whatItDoes .afterSearch p,
+  .howItWorks .afterSearch p,
+  .whatItDoes .algo p,
+  .howItWorks .algo p {
+    margin-right: 5%;
+    word-wrap: break-word;
+    width: 55%;
+    font-size: 2.3rem;
+  }
+  .whatItDoes .afterSearch img,
+  .howItWorks .afterSearch img,
+  .whatItDoes .algo img,
+  .howItWorks .algo img {
+    width: 40%;
+  }
+}
+@media (min-width: 1000px) {
+  .whatItDoes .learnMore,
+  .howItWorks .learnMore {
+    padding: 0 3%;
+    font-size: 6rem;
+  }
+  .whatItDoes p,
+  .howItWorks p {
+    font-size: 3rem;
+  }
+}
+footer {
+  background-color: #ADE8FA;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+}
+footer h1 {
+  font-family: 'Roboto Slab', serif;font-weight: 900;;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  margin: 3rem;
+}
+footer button {
+  border: 0.2rem solid #254E70;
+  border-radius: 6px;
+  background-color: #ff3f18;
+  color: #FCFCFC;
+  text-decoration: none;
+  padding: 2% 4%;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+footer button:hover {
+  background-color: #FCFCFC;
+  color: #ff3f18;
+  border: 0.2rem solid black;
+}
+footer .backToTop {
+  margin: 1rem 0;
+}
+footer .backToTop img {
+  width: 5rem;
+  height: 5rem;
+}
+@media (min-width: 500px) {
+  footer h1 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+    margin: 4rem 4rem;
+  }
+  footer button {
+    font-size: 3rem;
+  }
+  footer .backToTop {
+    margin: 1rem 0;
+  }
+  footer .backToTop img {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+@media (min-width: 800px) {
+  footer h1 {
+    font-size: 3rem;
+  }
+  footer button {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  footer button {
+    padding: 1% 4%;
+  }
+  footer h1 {
+    margin: 2rem;
+  }
 }

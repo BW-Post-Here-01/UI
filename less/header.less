@@ -1,0 +1,71 @@
+nav{
+    padding: 2%;
+    width: 100%;
+    background-color: @redditOrange;
+    border-bottom: .1rem solid black;
+    .flexit(row, nowrap, flex-start);
+    img{
+        width: 20%;
+    }
+    .btnwrap{
+        width: 30%;
+        margin: 3%;
+         .logIn{
+            .stybtn(@bordcol:@otherBackCo; @bordrad:6px; @bgrcol:@redditBlue; @otherBackCo; @txdec:none; @pad:2% 4%; @f-size:2rem; @txtali: center);
+            width: 100%;
+        }
+        .regis{
+            .stybtn(@bordcol:@otherBackCo; @bordrad:6px; @bgrcol:@redditBlue; @otherBackCo; @txdec:none; @pad:2% 4%; @f-size:2rem; @txtali: center);
+            width: 100%;
+            margin-bottom: 5%;
+        }
+    }
+    p{
+        font-family: @tittle;
+        font-size: 1.5rem;
+        width: 51%;
+        margin-block-start: 12%;
+    }
+    @media@phone{
+        p{
+            font-size: 2rem;
+        }
+    }
+    @media @tablet{
+        img{
+            width: 10%;
+        }
+        p{
+            font-size: 3.1rem;
+        }
+        .btnwrap{
+            margin: 0 3% 0 10%;
+            width: 20%;
+            .logIn, .regis{
+                font-size: 3rem;
+            }
+        }
+        p{
+            font-size: 4rem;
+            margin-block-start: 6%;
+            width: 77%;
+        }
+    }
+    @media@desktop{
+        img{
+            width: 9%;
+        }
+        .btnwrap{
+            margin: 1% 0% 1% 0%;
+            width: 20%;
+            .logIn, .regis{
+                font-size: 3rem;
+            }
+        }
+        p{
+            font-size: 4rem;
+            margin-block-start: 5%;
+            width: 77%;
+        }
+    }
+}

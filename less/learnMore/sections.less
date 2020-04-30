@@ -1,0 +1,88 @@
+.content{
+    margin: 0 5%;
+    a{
+        font-family: @Mfont;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin: 2rem auto;
+        list-style: inside;
+        text-decoration: none;
+    }
+    h1{
+        font-family: @tittle;
+        font-size: 5rem;
+        line-height: 5rem;
+        margin: 10rem auto;
+        border: .1rem solid black;
+        border-radius: 8px;
+        background-color: @redditBlue;
+        text-align: center;
+    }
+    h2{
+        font-family: @subtittle;
+        font-size: 4rem;
+        line-height: 4rem;
+        margin: 12rem auto;
+        border: .1rem solid black;
+        border-radius: 8px;
+        background-color: @redditOrange;
+        text-align: center;
+        padding: 1rem;
+        width: 60%;
+    }
+    p, li{
+        font-family: @Mfont;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin: 2rem auto;
+        list-style: inside;
+    }
+    ul {
+        columns: 1;
+        margin: 5%;
+        li{
+            margin: .5rem;
+        }
+      }
+    @media@phone{
+        ul{
+            columns: 2;
+            li{
+                font-size: 1.4rem;
+            }
+        }  
+    }
+    @media@tablet{
+        margin: 0 15%;
+        ul{
+            columns: 3;
+            li{
+                font-size: 1.4rem;
+                margin: 1.4rem 0;
+            }
+        }
+    }
+    @media@desktop{
+
+        margin: 0 10%;
+        p{
+            font-size: 3rem;
+            line-height: 3.5rem;  
+        }
+        ul{
+            columns: 4;
+            li{
+                font-size: 1.8rem;
+                margin: 1rem 0;
+            }
+        }
+        h1{
+            font-size: 10rem;
+        line-height: 10rem;
+        }
+        h2{
+            font-size: 5rem;
+            line-height: 5rem;
+        }
+    }
+}
