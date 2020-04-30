@@ -6,7 +6,7 @@ footer {
         font-size: 2rem;
         letter-spacing: 0.2rem;
         line-height: 2rem;
-        margin: 3rem 3rem;
+        margin: 3rem;
     }
     button{
         .stybtn(@bordcol:@otherBackCo; @bordrad:6px; @bgrcol:@redditOrange; @color:@backCo; @txdec:none; @pad:2% 4%; @f-size:2rem; @txtali: center);
@@ -21,7 +21,7 @@ footer {
     }
     @media@phone{
         h1{
-            font-size: 3rem;
+            font-size: 2.8rem;
             line-height: 3rem;
             margin: 4rem 4rem;
         }
@@ -34,15 +34,23 @@ footer {
             width: 7rem;
             height: 7rem;
             }
+        }
     }
     @media@tablet{
         h1{
-            width: 50%;
+            // width: 50%;
             font-size: 3rem;
         }
         button{
-            font-size: 3rem;
-            }
+            font-size: 2rem;
+        }
+    }
+    @media@desktop{
+        button{
+            padding: 1% 4%;
+        }
+        h1{
+            margin: 2rem;
         }
     }
 }

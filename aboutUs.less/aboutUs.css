@@ -220,37 +220,25 @@ nav p {
   }
 }
 @media (min-width: 800px) {
-  nav img {
-    width: 10%;
-  }
   nav p {
     font-size: 3.1rem;
   }
-  nav .btnwrap {
-    margin: 0 3% 0 10%;
-    width: 20%;
-  }
   nav .btnwrap .logIn,
   nav .btnwrap .regis {
-    font-size: 3rem;
-  }
-  nav p {
     font-size: 4rem;
-    margin-block-start: 6%;
-    width: 77%;
   }
 }
 @media (min-width: 1000px) {
   nav img {
-    width: 9%;
+    width: 8%;
   }
   nav .btnwrap {
-    margin: 1% 0% 1% 0%;
+    margin: 1% 0% 1% 20%;
     width: 20%;
   }
   nav .btnwrap .logIn,
   nav .btnwrap .regis {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   nav p {
     font-size: 4rem;
@@ -259,95 +247,140 @@ nav p {
   }
 }
 .content {
-  margin: 0 5%;
-}
-.content a {
-  font-family: 'Roboto Slab', serif;;
-  font-size: 1.7rem;
-  line-height: 2rem;
-  margin: 2rem auto;
-  list-style: inside;
-  text-decoration: none;
+  margin: 5% display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; align-content: flex-start;;
 }
 .content h1 {
+  display: block;
+  width: 90%;
   font-family: Bungee, cursive;
   font-size: 5rem;
   line-height: 5rem;
-  margin: 10rem auto;
-  border: 0.1rem solid black;
-  border-radius: 8px;
-  background-color: #ADE8FA;
+  margin: 5rem auto;
   text-align: center;
+}
+.content .cards {
+  padding: 0 10%;
+  border: 0.2rem groove #254E70;
+  border-radius: 6px;
+  text-align: center;
+  margin: 5rem 10%;
+}
+.content .cards img {
+  width: 100%;
+  margin: 2rem 0;
+  border: 0.2rem solid #254E70;
+  border-radius: 50%;
+}
+.content .cards div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-start;
+}
+.content .cards div a img {
+  border: none;
+  max-width: 3rem;
+  height: 3rem;
 }
 .content h2 {
   font-family: 'Roboto Slab', serif;font-weight: 900;;
-  font-size: 4rem;
-  line-height: 4rem;
-  margin: 12rem auto;
-  border: 0.1rem solid black;
-  border-radius: 8px;
-  background-color: #ff3f18;
-  text-align: center;
-  padding: 1rem;
-  width: 60%;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin: 1rem 0;
+  border-left: 0.2rem solid #254E70;
+  border-right: 0.2rem solid #254E70;
+  border-top: 0.2rem solid #254E70;
 }
-.content p,
-.content li {
+.content p {
   font-family: 'Roboto Slab', serif;;
-  font-size: 1.7rem;
-  line-height: 2rem;
-  margin: 2rem auto;
-  list-style: inside;
-}
-.content ul {
-  columns: 1;
-  margin: 5%;
-}
-.content ul li {
-  margin: 0.5rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  border-left: 0.2rem solid #254E70;
+  border-right: 0.2rem solid #254E70;
+  border-bottom: 0.2rem solid #254E70;
+  padding: 1rem 0.1rem;
 }
 @media (min-width: 500px) {
-  .content ul {
-    columns: 2;
+  .content .cards {
+    padding: 0 5%;
   }
-  .content ul li {
-    font-size: 1.4rem;
+  .content .cards img {
+    max-width: 80%;
+  }
+  .content .cards h2 {
+    font-size: 3.7rem;
+    line-height: 4.2rem;
+  }
+  .content .cards p {
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 }
 @media (min-width: 800px) {
   .content {
-    margin: 0 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
   }
-  .content ul {
-    columns: 3;
+  .content .cards {
+    width: 40%;
+    margin: 5rem 0;
   }
-  .content ul li {
-    font-size: 1.4rem;
-    margin: 1.4rem 0;
+  .content .cards img {
+    max-width: 100%;
+  }
+  .content .cards h2 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  .content .cards p {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 @media (min-width: 1000px) {
   .content {
-    margin: 0 10%;
-  }
-  .content p {
-    font-size: 3rem;
-    line-height: 3.5rem;
-  }
-  .content ul {
-    columns: 4;
-  }
-  .content ul li {
-    font-size: 1.8rem;
-    margin: 1rem 0;
+    margin: 5% 5%;
   }
   .content h1 {
     font-size: 10rem;
-    line-height: 10rem;
   }
-  .content h2 {
-    font-size: 5rem;
-    line-height: 5rem;
+  .content .cards {
+    justify-content: space-evenly;
+    padding: 1%;
+    width: 19%;
+    margin: 5rem 3%;
+  }
+  .content .cards img {
+    max-width: 100%;
+    margin: 0;
+  }
+  .content .cards h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .content .cards p {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  .content .cards div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+  }
+  .content .cards div a img {
+    border: none;
+    max-width: 3.5rem;
+    height: 3.5rem;
+    margin: 1rem 0;
   }
 }
 footer {
@@ -361,7 +394,7 @@ footer {
 }
 footer h1 {
   font-family: 'Roboto Slab', serif;font-weight: 900;;
-  font-size: 1.8rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
   line-height: 2rem;
   margin: 3rem;
@@ -391,9 +424,9 @@ footer .backToTop img {
 }
 @media (min-width: 500px) {
   footer h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     line-height: 3rem;
-    margin: 4rem;
+    margin: 4rem 4rem;
   }
   footer button {
     font-size: 3rem;
@@ -409,7 +442,6 @@ footer .backToTop img {
 @media (min-width: 800px) {
   footer h1 {
     font-size: 3rem;
-    margin: 2rem;
   }
   footer button {
     font-size: 2rem;
