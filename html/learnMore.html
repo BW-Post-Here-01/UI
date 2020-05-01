@@ -12,8 +12,8 @@
             <img src="..\static\img\Logos\wrv2.png" alt="lorem" onclick="window.location.href='../index.html'">
             <p>Where In Reddit ?</p>
             <div class=btnwrap>
-            <button class="regis">Sign Up</button>
-            <button class="logIn">Sign In</button>
+            <button class="regis" onclick="window.location.href='aboutUs.html'">About Us</button>
+            <button class="logIn" onclick="window.open('https://distracted-hermann-5231fb.netlify.app/')">Sign In</button>
             </div>
         </nav>
     </header>
@@ -21,16 +21,34 @@
         <h1>Learn about our project</h1>
         <h2>Back-End</h2>
         <p>
+            To be able to easily access our post classifying model we needed to put it in a web application online to create an interface with which a user can access that algorithm. You can type a potential post and get a suggestion of 5 subreddits that would be the most relevant or you can save it for later. You are also able to delete old posts after you have saved them.
+            <br><br> -We use react to build front end :
+            Components
+            State management
+            Account system
+            Reddit posts Storing and Deletion.
+            <br>
+            <br>
+            -For the Back-End we built it using knex , heroku, postgres, Js and node modules :
+            Data Base
+            Tables
+            API End-points
+            User Authentication
+            <br>
+            Users can create an account and login  they can send a post to our external api which will determine what the best subreddits for that post are. A user can then archive the post and will save that on our back end so that they can access it and change it any time they login
             
+            <img src="../static/img/sections/userProfile.png" alt="">
+
             </p>
         <h2>Algorithm</h2>
         <p>
             The first step for any data science problem is the data itself.  When we started scraping reddit posts we searched about 100 of the most popular subreddits, plus a few we handpicked ourselves, and kept the ones that actually had text posts.  It wouldn’t make sense for us to tell you to post your story in r/gifs would it?  Once we were done we had over 31 thousand posts to work with, among 50 different subreddits.
             <br><br><br>
-            Now that we had all these posts, we approached the problem as a document similarity one.  To put it simply, our model takes a new post and decides which other posts it is most similar to.  This works with any kind of classification model, so we tried many different kinds to see which would work best.  The clear winner by far was a Random Forest model, our final version achieved xx% accuracy.  And remember, if you randomly picked between 50 different categories you would only be correct 2% of the time!  And when you consider the 3 or 5 most likely subreddits like our app does, it gets even more accurate.
+            Now that we had all these posts, we approached the problem as a document similarity one.  To put it simply, our model takes a new post and decides which other posts it is most similar to.  This works with any kind of classification model, so we tried many different kinds to see which would work best.  The clear winner by far was a Random Forest model, our final version achieved 63% accuracy.  And remember, if you randomly picked between 50 different categories you would only be correct 2% of the time!  And when you consider the 3 or 5 most likely subreddits like our app does, it gets even more accurate.
             <br><br><br>
             Of course, this was all in a one week project.  Given more time there would be tons of things we could do to improve this product, such as gathering more data, extensive cleaning, and model optimization.
 
+            <img src="../static/img/sections/frmc2268x1640.png" alt="">
         </p>
         <h2 id="subreddits">Subreddits included:</h2>
         <ul>
@@ -88,7 +106,7 @@
     </section>
     <footer class="calltoAction">
         <h1>To classify your first post,<br> create your account.</h1>
-        <button class="singUp">Sign In/Up</button>
+        <button class="singUp" onclick="window.open('https://distracted-hermann-5231fb.netlify.app/')">Sign In/Up</button>
         <div class="backToTop"><a href="#top"><img src="/static/upArrow.png" alt=""></a></div>
     </footer>
 </body>

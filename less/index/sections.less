@@ -1,6 +1,5 @@
 .whatItDoes, .howItWorks{
     border-top: .2rem solid @otherBackCo;
-    border-bottom: .2rem solid @otherBackCo;
     letter-spacing: .05rem;
     .flexit(column, nowrap, space-between, center);
     .learnMore{
@@ -31,12 +30,20 @@
             border-radius: 12px;
             border: .2rem solid @otherBackCo;
         }
-        p{
+        p, a{
             font-size: 2rem;
             margin: 10% 0;
             word-wrap: break-word;
             line-height: 2rem;
-            // letter-spacing: .05rem;
+            text-decoration: none;
+            font-family: @Mfont;
+
+        }
+        a{
+            color: @accents;
+            &:hover{
+                color: @redditBlue;
+            }
         }
     }
     @media@phone{
@@ -49,7 +56,7 @@
             line-height: 7rem;
         }
         .search, .afterSearch, .accounts, .algo{
-            p{
+            p, a{
                 font-size: 3rem;
                 line-height: 3rem;
                 // letter-spacing: .05rem;
@@ -71,7 +78,7 @@
         width: 90%;
         margin: 0 auto;
             .flexit(row, nowrap, space-between, center);
-        p{
+            p, a{
             margin-left: 5%;
             word-wrap: break-word;
             width: 55%;
@@ -97,12 +104,20 @@
             }
     }
     @media@desktop{
-        .learnMore{
-            padding: 0 3%;
-            font-size: 6rem;
-        }
-        p{
+        p, a{
             font-size: 3rem;
+        }
+    }
+    @media@ldesktop{
+        margin: 0 15%;
+        .search, .afterSearch, .accounts, .algo{
+            p, a{
+                font-size: 4rem;
+                line-height: 5.5rem;
+            }
+            img{
+                height: 45rem;
+            }
         }
     }
 }
