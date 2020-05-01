@@ -227,7 +227,7 @@ nav p {
     font-size: 3.1rem;
   }
   nav .btnwrap {
-    margin: 0 3% 0 10%;
+    margin: 3% 3% 3% 10%;
     width: 20%;
   }
   nav .btnwrap .logIn,
@@ -258,16 +258,26 @@ nav p {
     width: 77%;
   }
 }
+@media (min-width: 1000px) {
+  nav img {
+    width: 5%;
+  }
+  nav .btnwrap {
+    margin: 1% 0% 1% 8%;
+    width: 10%;
+  }
+  nav .btnwrap .logIn,
+  nav .btnwrap .regis {
+    font-size: 2rem;
+  }
+  nav p {
+    font-size: 6rem;
+    margin-block-start: 3%;
+    width: 77%;
+  }
+}
 .content {
   margin: 0 5%;
-}
-.content a {
-  font-family: 'Roboto Slab', serif;;
-  font-size: 1.7rem;
-  line-height: 2rem;
-  margin: 2rem auto;
-  list-style: inside;
-  text-decoration: none;
 }
 .content h1 {
   font-family: Bungee, cursive;
@@ -281,8 +291,8 @@ nav p {
 }
 .content h2 {
   font-family: 'Roboto Slab', serif;font-weight: 900;;
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
   margin: 12rem auto;
   border: 0.1rem solid black;
   border-radius: 8px;
@@ -290,6 +300,16 @@ nav p {
   text-align: center;
   padding: 1rem;
   width: 60%;
+}
+.content img {
+  max-width: 98%;
+  margin: 5% auto;
+  border: 0.1rem solid black;
+  border-radius: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 .content p,
 .content li {
@@ -338,7 +358,7 @@ nav p {
     columns: 4;
   }
   .content ul li {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin: 1rem 0;
   }
   .content h1 {
@@ -348,6 +368,31 @@ nav p {
   .content h2 {
     font-size: 5rem;
     line-height: 5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .content {
+    margin: 0 25%;
+  }
+  .content p {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .content ul {
+    columns: 4;
+  }
+  .content ul li {
+    font-size: 1.7rem;
+    margin: 1rem 0;
+  }
+  .content h1 {
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+  .content h2 {
+    font-size: 7rem;
+    line-height: 7rem;
+    padding: 2rem;
   }
 }
 footer {
@@ -421,5 +466,16 @@ footer .backToTop img {
   }
   footer h1 {
     margin: 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  footer button {
+    padding: 0.5%;
+    font-size: 3rem;
+  }
+  footer h1 {
+    margin: 2rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }

@@ -12,8 +12,8 @@
     }
     h2{
         font-family: @subtittle;
-        font-size: 4rem;
-        line-height: 4rem;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
         margin: 12rem auto;
         border: .1rem solid black;
         border-radius: 8px;
@@ -22,6 +22,16 @@
         padding: 1rem;
         width: 60%;
     }
+    img{
+        max-width: 98%;
+        margin: 5% auto;
+        border: .1rem solid black;
+        border-radius: 6px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        }
     p, li{
         font-family: @Mfont;
         font-size: 1.7rem;
@@ -64,7 +74,7 @@
         ul{
             columns: 4;
             li{
-                font-size: 1.8rem;
+                font-size: 1.7rem;
                 margin: 1rem 0;
             }
         }
@@ -75,6 +85,30 @@
         h2{
             font-size: 5rem;
             line-height: 5rem;
+        }
+    }
+    @media@ldesktop{
+
+        margin: 0 25%;
+        p{
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+        ul{
+            columns: 4;
+            li{
+                font-size: 1.7rem;
+                margin: 1rem 0;
+            }
+        }
+        h1{
+            font-size: 10rem;
+            line-height: 10rem;
+        }
+        h2{
+            font-size: 7rem;
+            line-height: 7rem;
+            padding: 2rem;
         }
     }
 }

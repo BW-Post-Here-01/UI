@@ -227,7 +227,7 @@ nav p {
     font-size: 3.1rem;
   }
   nav .btnwrap {
-    margin: 0 3% 0 10%;
+    margin: 3% 3% 3% 10%;
     width: 20%;
   }
   nav .btnwrap .logIn,
@@ -255,6 +255,24 @@ nav p {
   nav p {
     font-size: 4rem;
     margin-block-start: 5%;
+    width: 77%;
+  }
+}
+@media (min-width: 1000px) {
+  nav img {
+    width: 5%;
+  }
+  nav .btnwrap {
+    margin: 1% 0% 1% 8%;
+    width: 10%;
+  }
+  nav .btnwrap .logIn,
+  nav .btnwrap .regis {
+    font-size: 2rem;
+  }
+  nav p {
+    font-size: 6rem;
+    margin-block-start: 3%;
     width: 77%;
   }
 }
@@ -404,6 +422,46 @@ nav p {
     margin: 1rem 0;
   }
 }
+@media (min-width: 1400px) {
+  .content {
+    margin: 5% 5%;
+  }
+  .content h1 {
+    font-size: 10rem;
+  }
+  .content .cards {
+    justify-content: space-evenly;
+    padding: 1%;
+    width: 21%;
+    margin: 5rem 2%;
+  }
+  .content .cards img {
+    max-width: 70%;
+    margin: 5% 0;
+  }
+  .content .cards h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .content .cards p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .content .cards div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+  }
+  .content .cards div a img {
+    border: none;
+    max-width: 3.5rem;
+    height: 3.5rem;
+    margin: 3rem 0;
+  }
+}
 footer {
   background-color: #ADE8FA;
   display: flex;
@@ -415,7 +473,7 @@ footer {
 }
 footer h1 {
   font-family: 'Roboto Slab', serif;font-weight: 900;;
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 0.2rem;
   line-height: 2rem;
   margin: 3rem;
@@ -475,5 +533,16 @@ footer .backToTop img {
   }
   footer h1 {
     margin: 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  footer button {
+    padding: 0.5%;
+    font-size: 3rem;
+  }
+  footer h1 {
+    margin: 2rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }

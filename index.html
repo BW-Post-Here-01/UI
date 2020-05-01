@@ -12,43 +12,43 @@
             <img src="static\img\Logos\wrv2.png" alt="lorem">
             <p>Where In Reddit ?</p>
             <div class=btnwrap>
-            <button class="regis">Sign Up</button>
-            <button class="logIn">Sign In</button>
+                <button class="regis" onclick="window.location.href='/html/aboutUs.html'">About Us</button>
+            <button class="logIn" onclick="window.open('https://distracted-hermann-5231fb.netlify.app/')">Sign In</button>
             </div>
         </nav>
         <div class="banner">
         <h1>Where In Reddit ?</h1>
         <h2>Find the correct subreddit for your post.</h2>
-        <button class="regis">Sign Up/Sign In Now!</button>
+        <button class="regis" onclick="window.open('https://distracted-hermann-5231fb.netlify.app/')">Sign Up/Sign In Now!</button>
         </div>
     </header>
     <section class="whatItDoes">
         <h1>What It Does ?</h1>
         <div class="search">
             <img src="static\img\sections\redditmap.jpg" alt="lorem">
-            <p>There are many subreddits and if you are not a reddit veteran you might not know what subreddit would be the best one for your post. <br> we built this website to help with this. We take your post and suggest the 3 more relevant subreddits where you can post it, from a limited <a href="html/learnMore.html#subreddits">selection of subreddits</a>.</p>
+            <p>There are many subreddits and if you are not a reddit veteran you might not know what subreddit would be the best one for your post. <br> we built this website to help you with this. We take your post and suggest the 5 more relevant subreddits where you can post it, from a limited <a href="html/learnMore.html#subreddits">selection of subreddits</a>.</p>
         </div>
         <div class="afterSearch">
             <img src="static\img\sections\typing.jpg" alt="lorem">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque impedit id voluptatem ab. Nam aperiam, doloribus architecto officiis qui nihil corporis dolorem sed provident cumque consequuntur ea ut et adipisci.</p>
+            <p>You can type a potential post and get a suggestion of 5 subreddits that would be the most relevant or you can save it for later. You are also able to delete old posts after you have saved them.</p>
         </div>
         <button class="learnMore"><a href="html\aboutUs.html">About Us</a></button>
     </section>
     <section class="howItWorks">
         <h1>How It Works ?</h1>
         <div class="accounts">
-            <img src="https://picsum.photos/200/300" alt="lorem">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est qui nam molestiae quae, ex odit alias quo, saepe iusto quod architecto numquam voluptatem perspiciatis ratione praesentium. Ducimus natus facilis iusto.</p>
+            <img src="static\img\sections/userProfile.png" alt="lorem">
+            <p>Users can create an account and login  they can send a post to our external api which will determine what the best subreddits for that post are. A user can then archive the post and will save that on our back end so that they can access it and change it any time they login.</p>
         </div>
         <div class="algo">
             <img src="static\img\sections\algovisual.jpg" alt="lorem">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vero? Quaerat nostrum ipsam impedit doloremque, at quos repellat beatae ab, itaque perspiciatis maiores nihil cum vero saepe deleniti eveniet! Similique!</p>
+            <p>We decided we will use Natural Language Processing techniques to find document similarity to existing posts.  We scraped thousands of posts from 50 different subreddits in order to train the model.  With that we are able to take your new post and find which subreddit is a best fit with an accuracy of 63% when you think about it is 30 times better than just guessing.</p>
         </div>
         <button class="learnMore"><a href="html\learnMore.html">Learn more...</a></button>
     </section>
     <footer class="calltoAction">
         <h1>To classify your first post,<br> create your account.</h1>
-        <button class="singUp">Sign In/Up</button>
+        <button class="singUp" onclick="window.open('https://distracted-hermann-5231fb.netlify.app/')">Sign In/Up</button>
         <div class="backToTop"><a href="#top"><img src="/static/upArrow.png" alt=""></a></div>
     </footer>
 </body>
